@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site Web</title>
+
+    <!-- Style CSS -->
+    <style>
+        /* 1. Réinitialisation de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Style global du corps de la page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f4f9;
+        }
+
+        /* 3. En-tête */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        /* 4. Barre de navigation */
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* 5. Conteneur principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Style pour l'image et le bouton */
+        .img-exemple {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 15px 0;
+        }
+
+        .btn-action {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn-action:hover {
+            background-color: #16a085;
+        }
+
+        /* 6. Pied de page */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête principal -->
+    <header>
+        <h1>Aventure HTML & CSS</h1>
+        <p>Un modèle de base pour apprendre la structure web</p>
+    </header>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Section 1 : Introduction -->
+        <section id="accueil">
+            <h2>Bienvenue dans le cours</h2>
+            <p>Voici une page modèle contenant les balises sémantiques essentielles du HTML5 et un style CSS moderne de base.</p>
+            <a href="#a-propos" class="btn-action">En savoir plus</a>
+        </section>
+
+        <!-- Section 2 : Liste des balises -->
+        <section id="a-propos">
+            <h2>Balises abordées dans cet exemple</h2>
+            <ul>
+                <li><strong>Sémantique :</strong> <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>footer</code></li>
+                <li><strong>Titres & Textes :</strong> <code>h1</code>, <code>h2</code>, <code>p</code>, <code>strong</code></li>
+                <li><strong>Listes & Liens :</strong> <code>ul</code>, <code>li</code>, <code>a</code></li>
+                <li><strong>Médias :</strong> <code>img</code></li>
+            </ul>
+
+            <img style="object-fit: ;" src="BGR.jpg" alt="Exemple d'image" class="img-exemple">
+        </section>
+
+        <!-- Section 3 : Formulaire de contact -->
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question, n'hésitez pas à nous laisser un message !</p>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2026 - Cours d'initiation au Développement Web</p>
+    </footer>
+
+</body>
+</html>
